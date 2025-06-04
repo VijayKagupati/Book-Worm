@@ -8,12 +8,14 @@ public enum GameState
     MainMenu,
     Lesson,
     Garden,
+    Math,
     Settings
 }
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
+    public EquationController equationController;
     public static GameManager Instance
     {
         get
@@ -39,7 +41,7 @@ public class GameManager : MonoBehaviour
     public GameObject mainMenuUI;
     public GameObject lessonUI;
     public GameObject gardenUI;
-    
+    public GameObject MathSceneUI;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -82,13 +84,22 @@ public class GameManager : MonoBehaviour
             case GameState.Garden:
                 if (gardenUI) gardenUI.SetActive(true);
                 break;
+            case GameState.Math:
+                if(MathSceneUI) MathSceneUI.SetActive(true);
+                break;
         }
     }
     
-    public void StartGame()
+    public void StartMathGame()
+    {
+        SwitchState(GameState.Math);
+        if (equationController != null)
+            equationController.StartGame();
+    }
+
+    public void LessonView()
     {
         SwitchState(GameState.Lesson);
-        // Additional setup for starting the lesson would go here
     }
     
     public void ViewGarden()
