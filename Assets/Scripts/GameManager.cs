@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
         if (mainMenuUI) mainMenuUI.SetActive(false);
         if (lessonUI) lessonUI.SetActive(false);
         if (gardenUI) gardenUI.SetActive(false);
+        if(MathSceneUI) MathSceneUI.SetActive(false);
         
         // Show appropriate UI based on state
         switch (currentState)
