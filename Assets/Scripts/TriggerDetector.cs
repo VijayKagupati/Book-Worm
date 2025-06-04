@@ -14,5 +14,9 @@ public class TriggerDetector : MonoBehaviour
         {
             token.ReturnToTray(tokenTray);
         }
+        else if (other.TryGetComponent(out CountryMarker marker))
+        {
+            marker.ReturnToTray(tokenTray);
+        }
     }
 }

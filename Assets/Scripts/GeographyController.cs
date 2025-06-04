@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class GeographyController : MonoBehaviour
 {
@@ -35,7 +37,12 @@ public class GeographyController : MonoBehaviour
         else if (Instance != this)
             Destroy(gameObject);
     }
-    
+
+    private void Start()
+    {
+        StartGame();
+    }
+
     public void StartGame()
     {
         currentRound = 0;
