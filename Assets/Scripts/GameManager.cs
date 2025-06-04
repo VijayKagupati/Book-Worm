@@ -9,6 +9,7 @@ public enum GameState
     Lesson,
     Garden,
     Math,
+    Geography,
     Settings
 }
 
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
     public EquationController equationController;
+    public GeographyController geographyController;
+
     public static GameManager Instance
     {
         get
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
     public GameObject lessonUI;
     public GameObject gardenUI;
     public GameObject MathSceneUI;
+    public GameObject GeographyUI;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -72,6 +76,7 @@ public class GameManager : MonoBehaviour
         if (lessonUI) lessonUI.SetActive(false);
         if (gardenUI) gardenUI.SetActive(false);
         if(MathSceneUI) MathSceneUI.SetActive(false);
+        if(GeographyUI) GeographyUI.SetActive(false);
         
         // Show appropriate UI based on state
         switch (currentState)
@@ -88,7 +93,17 @@ public class GameManager : MonoBehaviour
             case GameState.Math:
                 if(MathSceneUI) MathSceneUI.SetActive(true);
                 break;
+            case GameState.Geography:
+                if(GeographyUI) GeographyUI.SetActive(true);
+                break;
         }
+    }
+    
+    public void StartGeographyGame()
+    {
+        SwitchState(GameState.Geography);
+        if (geographyController != null)
+            geographyController.StartGame();
     }
     
     public void StartMathGame()
