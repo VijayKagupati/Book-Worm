@@ -23,10 +23,10 @@ public class GeographyController : MonoBehaviour
     public UnityEvent onGameComplete;
     
     public int currentRound = 0;
-    private int countriesPlaced = 0;
+    public int countriesPlaced = 0;
     private int targetCountriesPerRound = 3; // Number of countries to place per round
-    private List<CountryTarget> currentTargets = new List<CountryTarget>();
-    private List<CountryMarker> currentMarkers = new List<CountryMarker>();
+    public List<CountryTarget> currentTargets = new List<CountryTarget>();
+    public List<CountryMarker> currentMarkers = new List<CountryMarker>();
     private float startTime;
     private float totalAccuracy = 0;
     
