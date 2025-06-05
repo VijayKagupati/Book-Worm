@@ -16858,22 +16858,22 @@ PrefabInstance:
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 154
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1028240608209102563, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
@@ -17958,22 +17958,22 @@ PrefabInstance:
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8033026356624081519, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
@@ -23568,7 +23568,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967287
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
