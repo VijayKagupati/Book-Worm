@@ -121,6 +121,11 @@ public class GameManager : MonoBehaviour
     public void ViewGarden()
     {
         SwitchState(GameState.Garden);
+        StreakGardenController gardenController = FindObjectOfType<StreakGardenController>();
+        if (gardenController != null)
+        {
+            gardenController.RefreshGarden();
+        }
     }
     
     public void ReturnToMainMenu()

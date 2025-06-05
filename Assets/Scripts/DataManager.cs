@@ -91,8 +91,6 @@ public class DataManager : MonoBehaviour
             playerData.subjectProgress[subject] = 0;
         playerData.subjectProgress[subject]++;
         
-        // Add leaf for streak garden
-        playerData.totalLeavesEarned++;
         
         UpdateStreak();
         SaveData();
