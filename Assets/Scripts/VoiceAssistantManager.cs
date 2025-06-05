@@ -15,6 +15,7 @@ public class VoiceAssistantManager : MonoBehaviour
     [Header("Components")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private DictationService dictationService;
+    [SerializeField] private DictationDisplay dictationDisplay;
 
     [Header("API Configuration")]
     [SerializeField] private string groqApiKey;
@@ -81,6 +82,14 @@ public class VoiceAssistantManager : MonoBehaviour
     private void Update()
     {
         CheckForPrimaryButtonPress();
+    
+        // Editor testing
+        #if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            ToggleVoiceAssistant();
+        }
+        #endif
     }
 
     private void CheckForPrimaryButtonPress()
@@ -144,6 +153,9 @@ public class VoiceAssistantManager : MonoBehaviour
     {
         transcribedText = text;
         Debug.Log("Transcribed: " + transcribedText);
+    
+        if (dictationDisplay != null)
+            dictationDisplay.DisplayTextWithTypingEffect(transcribedText);
     }
 
     private void OnDictationStopped(DictationSession session)
@@ -339,9 +351,20 @@ public class VoiceAssistantManager : MonoBehaviour
         GroqTTS tts = GetComponent<GroqTTS>();
         if (tts == null)
             tts = gameObject.AddComponent<GroqTTS>();
-        
+
+        // Enhanced sanitization to remove all special characters and formatting
+        string sanitizedText = text
+            .Replace("\n", " ")
+            .Replace("\r", " ")
+            .Replace("\t", " ")
+            .Replace("*", "")    // Remove asterisks used for bold
+            .Replace("_", "")    // Remove underscores used for italics
+            .Replace("`", "")    // Remove backticks
+            .Replace("#", "")    // Remove heading markers
+            .Replace("\"", "'"); // Replace double quotes with single quotes
+
         onTTSStarted?.Invoke();
-        var task = tts.GenerateAndPlaySpeech(text);
+        var task = tts.GenerateAndPlaySpeech(sanitizedText);
 
         while (!task.IsCompleted)
             yield return null;
@@ -350,7 +373,7 @@ public class VoiceAssistantManager : MonoBehaviour
         {
             Debug.LogError("TTS error: " + task.Exception.Message);
         }
-        
+
         onTTSEnded?.Invoke();
     }
 
