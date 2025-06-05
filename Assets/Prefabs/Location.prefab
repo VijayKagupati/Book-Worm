@@ -579,3 +579,9 @@ MonoBehaviour:
     type: 3}
   correctMaterial: {fileID: 2100000, guid: 2da55a65582fc4b4d8eb25903415b452, type: 2}
   incorrectMaterial: {fileID: 2100000, guid: 78de352bdf8c9a14c8400c8510d128fa, type: 2}
+  snapIndicatorMaterial: {fileID: 2100000, guid: 0c9827f951b34734faf03980009973fe,
+    type: 2}
+  snapDistance: 0.2
+  snapForce: 5
+  snapIndicatorPrefab: {fileID: 8103426128685771100, guid: 4509473e000b956458021ee3b4b885f8,
+    type: 3}
