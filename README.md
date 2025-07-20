@@ -1,5 +1,6 @@
 # 🐛 BookWorm - Micro-Learning Playground
-![bookworm-banner-fixed](https://github.com/user-attachments/assets/ac4d038e-a97e-46c0-a08d-cdb5082fb772)
+![BookWorm](https://github.com/user-attachments/assets/bcbafc15-9737-4704-bc3c-0715f59612f2)
+
 **Learn, Game, and Grow Your Way to Mastery**!
 > *Turn learning into a habit, not a chore through immersive mixed reality experiences*
 
@@ -57,25 +58,23 @@ Interactive geography game that builds world knowledge through spatial learning
 
 ### **Core Components**
 
-#### 📊 **Data Persistence System**
+#### 📊 **Data Persistence System - In App**
 - **Robust Save/Load**: Secure storage of user progress and game states
 - **Cross-Session Continuity**: Seamless experience across multiple play sessions
 - **Performance Optimized**: Efficient data management for smooth MR performance
 
 #### 🗣️ **Speech Integration**
-- **Speech-to-Text**: Natural voice commands and interactions
-- **Text-to-Speech**: AI tutor speaks responses for immersive experience
-- **Accessibility**: Voice interfaces make learning accessible to diverse users
+- **Speech-to-Text**: Wit.Ai - Natural voice commands and interactions
+- **Text-to-Speech**: Groq API - AI tutor speaks responses for immersive experience
 
 #### 🧠 **AI Language Model Integration**
 - **State-Aware LLM**: AI tutor with access to current game and user data
 - **Contextual Responses**: Intelligent tutoring based on learning progress
-- **Adaptive Learning**: AI adjusts difficulty and content based on performance
 
 #### 🎯 **Mini Game Logic Engine**
 - **Modular Game System**: Easily extensible framework for new learning games
 - **Progress Tracking**: Detailed analytics on learning performance
-- **Adaptive Difficulty**: Games adjust to maintain optimal challenge level
+- **Increasing Difficulty**: Games adjust to maintain optimal challenge level
 
 #### 🌱 **Streak Garden System**
 - **Visual Progress Representation**: Beautiful 3D garden that grows with learning
@@ -85,7 +84,6 @@ Interactive geography game that builds world knowledge through spatial learning
 #### 🎨 **Custom Worm Character**
 - **Mascot Integration**: Friendly BookWorm character guides the learning journey
 - **Personality System**: Character responds to user progress and achievements
-- **Emotional Connection**: Creates bond between learner and learning process
 
 ---
 
@@ -130,7 +128,6 @@ git clone https://github.com/VijayKagupati/Book-Worm.git
 ### **Supported Learning Areas**
 - **Mathematics**: Algebra, equations, problem-solving
 - **Geography**: World knowledge, countries, spatial relationships
-- **General Knowledge**: Expandable framework for any subject area
 
 ---
 
@@ -141,29 +138,14 @@ git clone https://github.com/VijayKagupati/Book-Worm.git
 - **Contextual Awareness**: AI understands current game state and user history
 - **Personalized Learning**: Adaptive content delivery based on individual progress
 - **Natural Conversations**: Engaging dialogue that feels human and supportive
-
-### **Learning Analytics**
-- **Performance Tracking**: Detailed insights into learning patterns
-- **Difficulty Adaptation**: Automatic adjustment of challenge levels
-- **Engagement Metrics**: Understanding what keeps learners motivated
-- **Progress Prediction**: AI helps forecast learning trajectories
-
+- **Learning Analytics**: AI helps forecast learning trajectories
 ---
 
 ## 🎨 Design Philosophy
-
-### **Learning Psychology Integration**
 - **Habit Formation**: Built on proven behavioral science principles
 - **Micro-Learning**: Bite-sized sessions that fit into busy schedules
 - **Gamification**: Meaningful rewards that don't overshadow learning goals
 - **Social Learning**: AI companion provides social interaction element
-
-### **Accessibility & Inclusion**
-- **Multiple Learning Styles**: Visual, auditory, and kinesthetic approaches
-- **Adaptive Interfaces**: Accommodates different physical abilities
-- **Cultural Sensitivity**: Content designed for global audiences
-- **Age Flexibility**: Suitable for various age groups and skill levels
-
 ---
 
 ## 🚀 Future Roadmap
@@ -175,7 +157,6 @@ git clone https://github.com/VijayKagupati/Book-Worm.git
 - [ ] **Parent/Teacher Dashboard**: Progress monitoring for educators
 
 ### **Long-term Vision (v3.0+)**
-- [ ] **AR Integration**: Seamless real-world learning overlays
 - [ ] **Curriculum Integration**: Alignment with educational standards
 - [ ] **Community Features**: Learner communities and challenges
 - [ ] **Professional Development**: Corporate training applications
@@ -213,22 +194,6 @@ And all the amazing fellow students who provided feedback and support throughout
 
 ---
 
-## 📊 Project Impact
-
-### **Educational Benefits**
-- **Habit Formation**: Transforms sporadic learning into consistent practice
-- **Engagement**: Higher retention rates through gamified experiences
-- **Accessibility**: Makes learning available regardless of physical location
-- **Personalization**: AI-driven adaptation to individual learning needs
-
-### **Technical Innovation**
-- **MR Education Pioneer**: Early exploration of mixed reality for micro-learning
-- **AI-Human Interaction**: Natural language processing in immersive environments
-- **Gamification Science**: Application of behavioral psychology in XR
-- **Cross-Platform Architecture**: Scalable framework for future educational MR apps
-
----
-
 ## 💬 Community & Feedback
 
 **Join the Learning Revolution!**
@@ -236,7 +201,6 @@ And all the amazing fellow students who provided feedback and support throughout
 We believe that the future of education lies in immersive, personalized, and habit-forming experiences. BookWorm is just the beginning of this journey.
 
 - 🐛 **Found a bug?** [Report it here](https://github.com/VijayKagupati/Book-Worm/issues)
-- 💡 **Have ideas for new games?** [Share your thoughts](https://github.com/VijayKagupati/Book-Worm/discussions)
 - 📧 **Questions?** Reach out via [LinkedIn](https://linkedin.com/in/vijaykagupati)
 
 ---
