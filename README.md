@@ -87,13 +87,13 @@ Interactive geography game that builds world knowledge through spatial learning
 
 ---
 
-## 🎯 Getting Started
 
-### Prerequisites
+### Tech Stack
 - **Meta Quest 2/3** or compatible MR headset
 - **Unity 2022.3.40f1** or later
 - **Meta SDK v76.0.1**
-- **Adequate play space** (2m x 2m recommended)
+
+## 🎯 Getting Started
 
 ### Installation & Setup
 ```bash
