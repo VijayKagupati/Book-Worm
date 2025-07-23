@@ -198,8 +198,6 @@ And all the amazing fellow students who provided feedback and support throughout
 
 **Join the Learning Revolution!**
 
-We believe that the future of education lies in immersive, personalized, and habit-forming experiences. BookWorm is just the beginning of this journey.
-
 - 🐛 **Found a bug?** [Report it here](https://github.com/VijayKagupati/Book-Worm/issues)
 - 📧 **Questions?** Reach out via [LinkedIn](https://linkedin.com/in/vijaykagupati)
 
