@@ -103,6 +103,12 @@ git clone https://github.com/VijayKagupati/Book-Worm.git
 # Open in Unity
 # File → Open Project → Select Book-Worm folder
 
+#Go to https://console.groq.com/
+#Create an API Key
+#Go to Playground and agree to PlayAI TTS T&C
+#Copy and paste the api key in to the game object MANAGERS/GROQ to 2 scripts
+#1. Voice Assistant Manager 2. GroqTTS
+
 # Build to your headset
 ```
 
@@ -141,12 +147,7 @@ git clone https://github.com/VijayKagupati/Book-Worm.git
 - **Learning Analytics**: AI helps forecast learning trajectories
 ---
 
-## 🎨 Design Philosophy
-- **Habit Formation**: Built on proven behavioral science principles
-- **Micro-Learning**: Bite-sized sessions that fit into busy schedules
-- **Gamification**: Meaningful rewards that don't overshadow learning goals
-- **Social Learning**: AI companion provides social interaction element
----
+
 
 ## 🚀 Future Roadmap
 
