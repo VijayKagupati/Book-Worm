@@ -8620,6 +8620,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1167485074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429841596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 125908799}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &430275498
 GameObject:
   m_ObjectHideFlags: 0
@@ -12193,6 +12205,7 @@ Transform:
   - {fileID: 363072315}
   - {fileID: 839839451}
   - {fileID: 351791296}
+  - {fileID: 1807030694}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548398580
@@ -12418,22 +12431,22 @@ PrefabInstance:
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 154
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 935305165792370163, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1028240608209102563, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
@@ -13518,22 +13531,22 @@ PrefabInstance:
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7974221873738248123, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8033026356624081519, guid: ee824579eadf66544a0c3913fec1debf,
         type: 3}
@@ -18876,8 +18889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 839839453}
   dictationService: {fileID: 351791298}
-  dictationDisplay: {fileID: 0}
-  groqApiKey: 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
+  dictationDisplay: {fileID: 1807030695}
+  groqApiKey: 
   selectedVoice: 15
   baseSystemPrompt: You are a helpful learning assistant for children. Keep answers
     simple, educational, speaking form and engaging.
@@ -19106,7 +19119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 839839453}
-  apiKey: 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
+  apiKey: 
   selectedVoice: 15
   prompt: Hi I will help you out!
 --- !u!1 &855039514
@@ -40207,6 +40220,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 280050985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807030693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807030694}
+  - component: {fileID: 1807030695}
+  m_Layer: 0
+  m_Name: Dictation Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807030694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807030693}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 547771021}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807030695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807030693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c333345b21984c9e88c51f9fa35a1cf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 429841596}
+  typingSpeed: 0.05
+  leadingText: 'You said: '
 --- !u!1 &1813944502
 GameObject:
   m_ObjectHideFlags: 0
